@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>林屿 · 个人档案 | 前端开发 / 交互设计</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    background:#f5f2ed;
+    color:#4a4642;
+    font-family:system-ui, sans-serif;
+    line-height:1.7;
+}
+.page-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+    padding:2rem;
+}
+.main-nav{
+    margin-bottom:2rem;
+}
+.main-nav a{
+    color:#6c6965;
+    text-decoration:none;
+    margin-right:1.5rem;
+}
+.main-nav a:hover{
+    color:#4a4642;
+}
+.candidate-id{
+    position:absolute;
+    top:2rem;
+    right:2rem;
+    font-size:0.7rem;
+    color:#8a8580;
+}
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    padding:2rem 0;
+}
+.hero h1{
+    font-size:4rem;
+    font-weight:300;
+    letter-spacing:0.08em;
+}
+.hero-subtitle{
+    font-size:1rem;
+    color:#6c6965;
+    letter-spacing:0.2em;
+    margin-top:0.5rem;
+    border-left:1px solid #d8d2cb;
+    padding-left:0.8rem;
+}
+.section{
+    margin:4rem 0;
+}
+h2{
+    font-size:1rem;
+    color:#6c6965;
+    letter-spacing:0.2em;
+    padding-bottom:0.5rem;
+    border-bottom:0.5px solid #d8d2cb;
+    margin-bottom:1rem;
+    display:inline-block;
+}
+.profile-wrap{
+    display:flex;
+    gap:2rem;
+    flex-wrap:wrap;
+    align-items:flex-start;
+}
+.profile-img{
+    width:240px;
+    height:280px;
+    object-fit:cover;
+}
+.profile-text{
+    flex:1;
+    min-width:280px;
+    color:#6c6965;
+}
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.6rem;
+    margin-top:1rem;
+}
+.skill-tag{
+    background:rgba(235,230,222,0.5);
+    border:0.5px solid #d8d2cb;
+    padding:0.3rem 1rem;
+    font-size:0.75rem;
+    color:#6c6965;
+}
+.works-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    margin-top:1rem;
+}
+.work-card{
+    width:300px;
+    background:rgba(250,248,244,0.4);
+    border:0.5px solid #d8d2cb;
+    padding:1rem;
+}
+.work-thumb{
+    width:100%;
+    height:130px;
+    margin-bottom:0.8rem;
+    object-fit:cover;
+}
+.work-title{
+    font-size:0.9rem;
+    letter-spacing:0.1em;
+}
+.work-desc{
+    font-size:0.75rem;
+    color:#8a8580;
+    margin-top:0.4rem;
+}
+.edu-item{
+    font-size:1rem;
+}
+.edu-note{
+    font-size:0.75rem;
+    color:#8a8580;
+}
+.contact-info{
+    color:#6c6965;
+}
+.page-footer{
+    margin-top:5rem;
+    padding-top:1.5rem;
+    border-top:0.5px solid #d8d2cb;
+    text-align:center;
+    font-size:0.7rem;
+    color:#8a8580;
+}
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+    <nav class="main-nav">
+        <a href="index.html">首页</a>
+        <a href="message.html">留言板</a>
+    </nav>
+    <div class="candidate-id">Candidate test 1-12</div>
+    <header class="hero">
+        <div>
+            <h1>林屿</h1>
+            <div class="hero-subtitle">前端开发・交互设计候选人</div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Profile 个人自述</h2>
+        <div class="profile-wrap">
+            <img class="profile-img" src="image/1.jpg" alt="个人照片">
+            <div class="profile-text">
+                <p>林屿，计算机科学与技术专业，关注前端开发、界面设计。<br>
+                喜欢简约安静的页面风格，注重页面排版与阅读体验。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Skills 能力栈</h2>
+        <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Vue3</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Figma</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Selected Works 项目经历</h2>
+        <div class="works-grid">
+            <div class="work-card">
+                <img class="work-thumb" src="image/2.png" alt="项目截图">
+                <div class="work-title">个人作品集网站</div>
+                <div class="work-desc">使用HTML+CSS制作简约风格个人网页。</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Education 教育背景</h2>
+        <div class="edu-item">计算机专业 本科</div>
+        <div class="edu-note">方向：前端与交互设计</div>
+    </section>
+
+    <section class="section">
+        <h2>Contact 联系信息</h2>
+        <div class="contact-info">linyu@example.com</div>
+    </section>
+
+    <footer class="page-footer">
+        Candidate test 1-12
+    </footer>
+</div>
+</body>
+</html>
